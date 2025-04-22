@@ -1,3 +1,4 @@
+import Academic from "../../components/academic";
 import Banner from "../../components/banner";
 import Header from "../../components/header";
 import Support from "../../components/support";
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <Support />
       <Testimonial />
+      <Academic />
     </div>
   );
 }
