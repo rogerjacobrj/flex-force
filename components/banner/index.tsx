@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="banner">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-12 col-lg-4">
+                    <div className="col-12 col-lg-5">
                         <div className="banner-content">
                             <h1 className={[poppins.className, "banner-text"].join(" ")}>
                                 Empowering every Student with personalized learning for <span>lasting success</span>
@@ -58,7 +58,7 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-lg-8 p-0">
+                    <div className="col-12 col-lg-7 p-0">
                         <div className="banner-wrapper">
                             <Image
                                 src="/images/banner.png"
