@@ -1,11 +1,15 @@
 import Banner from "../../components/banner";
 import Header from "../../components/header";
+import Support from "../../components/support";
 
 export default function Home() {
   return (
     <div>
-      <Header />
-      <Banner />
+      <div style={{ position: "relative", height: '700px' }}>
+        <Header />
+        <Banner />
+      </div>
+      <Support />
     </div>
   );
 }
