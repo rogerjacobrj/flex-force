@@ -1,0 +1,111 @@
+.testimonial {
+    background: linear-gradient(180deg, rgba(200, 200, 200, 0.3) 31%, rgba(244, 244, 244, 0.3) 100%);
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 36px;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 36px;
+            font-family: 'Poppins', sans-serif;
+            color: #02342E;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #1D1D1D;
+        }
+    }
+
+    .card-scroll-container {
+        display: flex;
+        gap: 16px;
+        padding: 16px;
+        width: 100%;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: #fff;
+            padding: 28px 20px;
+            min-width: 24rem;
+
+            .item-content {
+                p {
+                    margin-top: 9px;
+                    font-weight: 400;
+                    font-size: 23px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                    color: #1D1D1D;
+                    margin-left: 23px;
+                    padding-right: 50px;
+                }
+            }
+
+            .author-content {
+                display: flex;
+                width: 100%;
+                margin-top: 50px;
+
+                .author-details {
+                    margin-left: 32px;
+
+                    h1 {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 140%;
+                        letter-spacing: 0%;
+                        color: #02342E;
+                        margin-bottom: 4px;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: #545454;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 140%;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+    .view-all-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 34px;
+        margin-bottom: 90px;
+
+        .view-all {
+            border: 1px solid #02342E;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 20px;
+            padding: 6px 60px;
+        }
+    }
+}

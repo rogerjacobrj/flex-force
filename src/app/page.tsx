@@ -1,6 +1,7 @@
 import Banner from "../../components/banner";
 import Header from "../../components/header";
 import Support from "../../components/support";
+import Testimonial from "../../components/testimonial";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Banner />
       </div>
       <Support />
+      <Testimonial />
     </div>
   );
 }
