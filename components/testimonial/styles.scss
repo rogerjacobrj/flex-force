@@ -10,7 +10,7 @@
         margin-bottom: 36px;
 
         h1 {
-            font-size: 32px;
+            font-size: 26px;
             font-weight: 600;
             line-height: 36px;
             font-family: 'Poppins', sans-serif;
@@ -30,12 +30,10 @@
         display: flex;
         gap: 26px;
         padding: 16px;
-        padding-left: 60px;
         width: 100%;
         overflow: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
-
 
         &::-webkit-scrollbar {
             display: none;
@@ -107,6 +105,20 @@
             line-height: 24px;
             border-radius: 20px;
             padding: 6px 60px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonial {
+        .header {
+            h1 {
+                font-size: 32px;
+            }
+        }
+
+        .card-scroll-container {
+            padding-left: 60px;
         }
     }
 }

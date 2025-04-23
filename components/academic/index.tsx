@@ -8,7 +8,7 @@ const Academic = () => {
         <section className="academic">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-12 col-lg-3">
+                    <div className="col-12 col-lg-4 col-xl-3">
                         <div className="academic-text">
                             <h1>How we increase academic performance</h1>
                             <p>
@@ -31,10 +31,10 @@ const Academic = () => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-lg-9">
+                    <div className="col-12 col-lg-8 col-xl-9">
                         <div className="row card-container">
                             {academic.map((item) => (
-                                <div key={item.id} className="col-12 col-lg-3 card-item p-0">
+                                <div key={item.id} className="col-12 col-md-4 col-lg-6 card-item p-0">
                                     <Image
                                         src={item.image}
                                         priority={true}

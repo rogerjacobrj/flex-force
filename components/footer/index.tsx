@@ -85,14 +85,14 @@ const Footer = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-5">
+                    <div className="col-md-6 col-lg-5">
                         <div className="copyright-text">
                             <p>
                                 © 2025 Milestone Learning
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-7">
+                    <div className="col-md-6 col-lg-7">
                         <div className="tc-links">
                             <Link href="">Privacy Policy</Link>
                             <Link href="">Terms of Services</Link>

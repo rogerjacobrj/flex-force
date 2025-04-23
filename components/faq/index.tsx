@@ -9,7 +9,7 @@ const Faq = () => {
         <section className="faq">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-12 col-lg-4">
                         <div className="header">
                             <h1>Frequently asked questions</h1>
                             <p>
@@ -18,7 +18,7 @@ const Faq = () => {
                         </div>
                     </div>
 
-                    <div className="col-8 custom-border">
+                    <div className="col-12 col-lg-8 custom-border">
                         <Accordion defaultActiveKey="0">
                             <AccordionItem eventKey="0">
                                 <AccordionHeader>What makes Milestone Learning different from other tutoring services?</AccordionHeader>

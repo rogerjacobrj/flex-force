@@ -17,7 +17,7 @@ const Why = () => {
 
             <div className="container py-5">
                 <div className="row justify-content-center mb-4">
-                    {why.slice(0, 3).map((item) => <div key={item.id} className="col-md-4 d-flex justify-content-center">
+                    {why.slice(0, 3).map((item) => <div key={item.id} className="col-md-6 col-lg-4 d-flex justify-content-center mb-4">
                         <div className="card p-0">
                             <div className="icon">
                                 <Image
@@ -37,7 +37,7 @@ const Why = () => {
                 </div>
 
                 <div className="row justify-content-center">
-                    {why.slice(3, 5).map((item) => <div key={item.id} className="col-md-4 d-flex justify-content-center">
+                    {why.slice(3, 5).map((item) => <div key={item.id} className="col-md-6 col-lg-4 d-flex justify-content-center mb-4">
                         <div className="card p-4">
                             <div className="icon">
                                 <Image

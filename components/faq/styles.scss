@@ -1,11 +1,11 @@
 .faq {
-    padding: 75px 56px;
+    padding: 75px 16px;
 
     .header {
         h1 {
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
-            font-size: 32px;
+            font-size: 23px;
             line-height: 40px;
             color: #02342E;
             margin-bottom: 30px;
@@ -19,12 +19,6 @@
             margin-bottom: 40px;
             max-width: 75%;
         }
-    }
-
-    .custom-border {
-        border-left: 1px solid #9D968D;
-        padding-left: 32px;
-        padding-bottom: 32px;
     }
 
     .accordion {
@@ -47,6 +41,7 @@
                     font-size: 16px;
                     line-height: 120%;
                     vertical-align: middle;
+                    padding: 0;
 
                     &::after {
                         color: #02342E;
@@ -83,6 +78,50 @@
             border-radius: 20px;
             padding: 6px 90px;
             background-color: #fff;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .faq {
+        .view-all-container {
+            justify-content: center;
+
+            .view-all {
+                width: max-content;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .faq {
+
+        .custom-border {
+            border-left: 1px solid #9D968D;
+            padding-left: 32px;
+            padding-bottom: 32px;
+        }
+
+        .view-all-container {
+            justify-content: flex-start;
+
+            .view-all {
+                width: max-content;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .faq {
+        padding: 75px 56px;
+
+        .header {
+            h1 {
+                font-size: 32px;
+            }
         }
     }
 }
