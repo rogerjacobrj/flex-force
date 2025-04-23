@@ -231,132 +231,6 @@
   font-weight: 500;
 }
 
-// Desktop
-.desktopNavBar {
-  display: none;
-  position: relative;
-  z-index: 10;
-  background-color: transparent;
-}
-
-.desktopNavigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5rem;
-
-  .leftSection {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.navbarBrand {
-  font-weight: 800;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #454749;
-}
-
-.navbarBrand:hover {
-  color: #228BE6;
-  text-decoration: none;
-}
-
-.navItemContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navigationContent {
-  list-style-type: none;
-  display: flex;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0 0 1.8rem;
-}
-
-.navigationList {
-  margin-right: 1.8rem;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: auto;
-  height: auto;
-}
-
-.navigationList:last-child {
-  margin-right: 0;
-}
-
-.navigationListItem {
-  color: #02342E;
-  font-size: 14px;
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 400;
-
-  &:hover {
-    color: #02342E;
-    cursor: pointer;
-    text-decoration: none;
-  }
-}
-
-.desktopActive {
-  color: #228BE6;
-  font-weight: 500;
-}
-
-.desktopParentNavigation {
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 3px 0px #00000014;
-}
-
-.ctaButtons {
-  display: flex;
-  align-items: center;
-}
-
-.loginButton {
-  text-decoration: none;
-  color: #02342E;
-  margin-right: 2rem;
-  display: flex;
-  align-items: center;
-  border: 2px solid #02342E;
-  border-radius: 20px;
-  padding: 8px 16px;
-
-  &:hover {
-    color: #02342E;
-  }
-
-  p {
-    margin: 0;
-    margin-left: 8px;
-  }
-}
-
-.registerButton {
-  background-color: #02342E;
-  color: #fff;
-  padding: 8px 40px;
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-
-  p {
-    margin: 0;
-    margin-bottom: 2px;
-    margin-left: 8px;
-  }
-}
 
 @media (min-width: 768px) {
   .mobileNavbarMenu {
@@ -369,14 +243,141 @@
     padding: 0;
   }
 
-  .desktopNavBar {
-    display: block;
-    background-color: transparent;
-  }
-
   .desktopParentNavigation {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0px 4px 3px 0px #00000014;
     border-radius: 0;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 0;
+  }
+
+  .desktopNavBar {
+    display: block;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+
+  .desktopNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+
+    .leftSection {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .navbarBrand {
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #454749;
+  }
+
+  .navbarBrand:hover {
+    color: #228BE6;
+    text-decoration: none;
+  }
+
+  .navItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigationContent {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0 0 1.8rem;
+  }
+
+  .navigationList {
+    margin-right: 0.8rem;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+  }
+
+  .navigationList:last-child {
+    margin-right: 0;
+  }
+
+  .navigationListItem {
+    color: #02342E;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+      color: #02342E;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .desktopActive {
+    color: #228BE6;
+    font-weight: 500;
+  }
+
+  .ctaButtons {
+    display: flex;
+    align-items: center;
+  }
+
+  .loginButton {
+    text-decoration: none;
+    color: #02342E;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #02342E;
+    border-radius: 20px;
+    padding: 8px 16px;
+
+    &:hover {
+      color: #02342E;
+    }
+
+    p {
+      margin: 0;
+      margin-left: 8px;
+    }
+  }
+
+  .registerButton {
+    background-color: #02342E;
+    color: #fff;
+    padding: 8px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+      margin-bottom: 2px;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktopNavigation {
+    padding: 0 5rem;
+  }
+
+  .navigationList {
+    margin-right: 1.8rem;
   }
 }
