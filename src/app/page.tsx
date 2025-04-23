@@ -8,6 +8,7 @@ import InterestedTutors from "../../components/interested-tutors";
 import Footer from "../../components/footer";
 import Insights from "../../components/insights";
 import Faq from "../../components/faq";
+import Why from "../../components/why";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Support />
       <Testimonial />
       <Academic />
+      <Why />
       <Tutors />
       <Insights />
       <Faq />
