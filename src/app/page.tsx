@@ -4,6 +4,7 @@ import Header from "../../components/header";
 import Support from "../../components/support";
 import Testimonial from "../../components/testimonial";
 import Tutors from "../../components/tutors";
+import InterestedTutors from "../../components/interested-tutors";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonial />
       <Academic />
       <Tutors />
+      <InterestedTutors />
     </div>
   );
 }

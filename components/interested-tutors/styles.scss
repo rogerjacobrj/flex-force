@@ -1,0 +1,42 @@
+.interested-tutors {
+    padding: 54px 0;
+    padding-bottom: 30px;
+    background-color: #EFEEEC;
+
+    .tutor-content {
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+            color: #02342E;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            margin-top: 34px;
+            justify-content: center;
+
+            button {
+                margin: 22px 0;
+                width: max-content;
+                border: none;
+                background-color: #02342E;
+                color: #fff;
+                font-weight: 400;
+                font-size: 13px;
+                border-radius: 100px;
+                padding: 10px 70px;
+            }
+        }
+    }
+}
