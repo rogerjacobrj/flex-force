@@ -1,0 +1,61 @@
+.tutors {
+    padding: 75px 0;
+
+    .tutor-content {
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 36px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #02342E;
+        }
+
+        .tutor-list {
+            display: flex;
+            padding: 16px;
+            width: 100%;
+            overflow: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            margin-top: 40px;
+            gap: 24px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .item {
+                box-shadow: 0px 2px 12px 0px #02342E1F;
+                background-color: #fff;
+                border-radius: 22px;
+                padding: 40px 50px;
+                max-width: fit-content;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .tutors {
+        padding: 75px 0;
+
+        .tutor-content {
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #02342E;
+            }
+
+            .tutor-list {
+                margin-top: 40px;
+                padding-left: 70px;
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.why {
+    background: url('/images/why/banner.png') center center / cover no-repeat;
+    width: 100%;
+    padding-bottom: 50px;
+
+    .header {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 36px;
+            letter-spacing: 0%;
+            color: #fff;
+            margin-top: 55px;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px !important;
+        border-radius: 24px;
+
+        .icon {
+            margin-bottom: 40px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                text-align: center;
+                color: #02342E;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                text-align: center;
+                color: #1D1D1D;
+                max-width: 75%;
+            }
+        }
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 54px;
+
+        .action-button {
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 100px;
+            padding: 20px 50px;
+            font-weight: 300;
+        }
+
+        .start-button {
+            background-color: #fff;
+            color: #02342E;
+        }
+
+        .learn-button {
+            margin-top: 32px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .why {
+        .header {
+            h1 {
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 54px;
+
+            .action-buttn {
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                border-radius: 100px;
+                padding: 8px 50px;
+                font-weight: 300;
+            }
+
+            .start-button {
+                margin-top: 32px;
+                background-color: #fff;
+                color: #02342E;
+                margin-right: 32px;
+            }
+
+            .learn-button {
+                margin-top: 32px;
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .why {
+        .header {
+            h1 {
+                font-size: 32px;
+                line-height: 36px;
+                margin-top: 55px;
+            }
+        }
+
+        .card {
+            .content {
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

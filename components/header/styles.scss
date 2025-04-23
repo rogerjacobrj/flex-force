@@ -1,0 +1,383 @@
+// Mobile
+.navigation {
+  position: sticky;
+  top: 0px;
+}
+
+.mobileNavBar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mobileNavbarBrand {
+  color: #20222A !important;
+  font-weight: 800;
+}
+
+.hamburgerMenu {
+  width: 1.75rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+  z-index: 667;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  height: 2.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: #fff;
+}
+
+.hamburgerMenuItem {
+  display: block;
+  position: absolute;
+  height: 0.1875rem;
+  width: 100%;
+  background-color: #02342E;
+  border-radius: 0.25rem;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburgerMenu span:nth-child(1) {
+  top: 0.5rem;
+}
+
+.hamburgerMenu span:nth-child(2),
+.hamburgerMenu span:nth-child(3) {
+  top: 1.0625rem;
+}
+
+.hamburgerMenu span:nth-child(4) {
+  top: 1.625rem;
+}
+
+.mobileNavbarMenu {
+  z-index: 1000;
+  background-size: 81.25rem 43.75rem;
+  background-repeat: repeat;
+  transform: translateY(100%);
+  position: fixed;
+  overflow: hidden;
+  top: 4rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff !important;
+
+}
+
+.openMenu {
+  position: relative;
+}
+
+.hamburgerMenu.openMenu span:nth-child(1) {
+  top: 1.125rem;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburgerMenu.openMenu span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburgerMenu.openMenu span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburgerMenu.openMenu span:nth-child(4) {
+  top: 1.125rem;
+  width: 0%;
+  left: 50%;
+}
+
+.mobileNavbarMenu.openMobileMenu {
+  transform: translateY(0);
+}
+
+.isAnimating {
+  animation-duration: 420ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.slideInLeft {
+  -webkit-animation-name: slide-in--top;
+  animation-name: slide-in--top;
+}
+
+.slideOutLeft {
+  -webkit-animation-name: slide-out--top;
+  animation-name: slide-out--top;
+}
+
+@keyframes slide-in--top {
+  0% {
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+
+  100% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+}
+
+@keyframes slide-out--top {
+  0% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+}
+
+.mobileNavbarLinkContainer {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.mobileNavBarItem {
+  margin-bottom: 0.8rem;
+  text-align: left;
+
+  &:hover {
+    text-decoration: underline;
+    color: #228BE6;
+  }
+}
+
+.mobileNavBarItemLink {
+  color: #454749;
+  font-size: 1.3em;
+  text-transform: capitalize;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mobileCtaButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  padding: 1rem;
+
+  .loginButton {
+    background-color: #02342E;
+    color: #fff;
+    padding: 8px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+      margin-bottom: 2px;
+      margin-left: 8px;
+    }
+  }
+
+  .registerButton {
+    text-decoration: none;
+    color: #02342E;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #02342E;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: #fff;
+
+    &:hover {
+      color: #02342E;
+    }
+
+    p {
+      margin: 0;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .mobileNavbarMenu {
+    overflow: scroll;
+  }
+}
+
+.mobileActive {
+  color: #228BE6;
+  font-weight: 500;
+}
+
+
+@media (min-width: 768px) {
+  .mobileNavbarMenu {
+    top: 3.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation {
+    padding: 0;
+  }
+
+  .desktopParentNavigation {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0px 4px 3px 0px #00000014;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 0;
+  }
+
+  .desktopNavBar {
+    display: block;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+
+  .desktopNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+
+    .leftSection {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .navbarBrand {
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #454749;
+  }
+
+  .navbarBrand:hover {
+    color: #228BE6;
+    text-decoration: none;
+  }
+
+  .navItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigationContent {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0 0 1.8rem;
+  }
+
+  .navigationList {
+    margin-right: 0.8rem;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+  }
+
+  .navigationList:last-child {
+    margin-right: 0;
+  }
+
+  .navigationListItem {
+    color: #02342E;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+      color: #02342E;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .desktopActive {
+    color: #228BE6;
+    font-weight: 500;
+  }
+
+  .ctaButtons {
+    display: flex;
+    align-items: center;
+  }
+
+  .loginButton {
+    text-decoration: none;
+    color: #02342E;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #02342E;
+    border-radius: 20px;
+    padding: 8px 16px;
+
+    &:hover {
+      color: #02342E;
+    }
+
+    p {
+      margin: 0;
+      margin-left: 8px;
+    }
+  }
+
+  .registerButton {
+    background-color: #02342E;
+    color: #fff;
+    padding: 8px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+      margin-bottom: 2px;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktopNavigation {
+    padding: 0 5rem;
+  }
+
+  .navigationList {
+    margin-right: 1.8rem;
+  }
+}
