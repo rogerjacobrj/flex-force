@@ -1,0 +1,88 @@
+.faq {
+    padding: 75px 56px;
+
+    .header {
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;
+            color: #02342E;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #1D1D1D;
+            margin-bottom: 40px;
+            max-width: 75%;
+        }
+    }
+
+    .custom-border {
+        border-left: 1px solid #9D968D;
+        padding-left: 32px;
+        padding-bottom: 32px;
+    }
+
+    .accordion {
+        .accordion-item {
+            margin-bottom: 42px;
+            border: none;
+            outline: 0;
+
+            .accordion-header {
+                background: none;
+                border: none;
+                border-bottom: none;
+
+                .accordion-button {
+                    background: none;
+                    border: none;
+                    color: #02342E;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 120%;
+                    vertical-align: middle;
+
+                    &::after {
+                        color: #02342E;
+                    }
+
+                    &:not(.collapsed) {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+            }
+
+            .accordion-body {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                letter-spacing: 0px;
+                color: #545454;
+            }
+
+        }
+    }
+
+    .view-all-container {
+        display: flex;
+        width: 100%;
+        margin-top: 34px;
+
+        .view-all {
+            border: 1px solid #02342E;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 20px;
+            padding: 6px 90px;
+            background-color: #fff;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import Tutors from "../../components/tutors";
 import InterestedTutors from "../../components/interested-tutors";
 import Footer from "../../components/footer";
 import Insights from "../../components/insights";
+import Faq from "../../components/faq";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Academic />
       <Tutors />
       <Insights />
+      <Faq />
       <InterestedTutors />
       <Footer />
     </div>
