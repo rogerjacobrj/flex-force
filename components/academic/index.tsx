@@ -1,13 +1,14 @@
 import Link from "next/link";
 import "./styles.scss";
 import Image from "next/image";
+import { academic } from "./data";
 
 const Academic = () => {
     return (
         <section className="academic">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <div className="academic-text">
                             <h1>How we increase academic performance</h1>
                             <p>
@@ -30,52 +31,24 @@ const Academic = () => {
                         </div>
                     </div>
 
-                    <div className="col-9">
-                        <div className="card-container">
-                            <div className="card-item">
-                                <Image
-                                    src="/images/ac1.png"
-                                    priority={true}
-                                    width={300}
-                                    height={335}
-                                    className="item-image"
-                                    alt="milestone"
-                                />
+                    <div className="col-12 col-lg-9">
+                        <div className="row card-container">
+                            {academic.map((item) => (
+                                <div key={item.id} className="col-12 col-lg-3 card-item p-0">
+                                    <Image
+                                        src={item.image}
+                                        priority={true}
+                                        width={300}
+                                        height={335}
+                                        className="item-image"
+                                        alt="milestone"
+                                    />
 
-                                <button className="schedule-button">
-                                    Schedule a Consultation
-                                </button>
-                            </div>
-
-                            <div className="card-item">
-                                <Image
-                                    src="/images/ac2.png"
-                                    priority={true}
-                                    width={300}
-                                    height={335}
-                                    className="item-image"
-                                    alt="milestone"
-                                />
-
-                                <button className="schedule-button">
-                                    Submit an Inquiry
-                                </button>
-                            </div>
-
-                            <div className="card-item">
-                                <Image
-                                    src="/images/ac3.png"
-                                    priority={true}
-                                    width={300}
-                                    height={335}
-                                    className="item-image"
-                                    alt="milestone"
-                                />
-
-                                <button className="schedule-button">
-                                    Book a Session
-                                </button>
-                            </div>
+                                    <button className="schedule-button">
+                                        {item.buttonText}
+                                    </button>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
