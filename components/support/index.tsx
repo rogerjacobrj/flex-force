@@ -19,7 +19,7 @@ const Support = () => {
                 </div>
 
                 <div className="row">
-                    {support.map((item) => <div key={item.title} className="col-12 col-lg-4">
+                    {support.map((item) => <div key={item.title} className="col-12 col-md-6 col-lg-6">
                         <div className="item">
                             <div className="icon-box">
                                 <Image
